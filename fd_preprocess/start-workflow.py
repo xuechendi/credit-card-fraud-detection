@@ -177,6 +177,9 @@ if __name__ == "__main__":
             help="specify the config file name")
 
     args, _ = parser.parse_known_args()
+
+    ls_dir = os.listdir('/input/data_connector/')
+    print(f"Files we can visualize from child is {ls_dir}")
     wf_processor = WFProcessor(args)
     
     start = time.time()
