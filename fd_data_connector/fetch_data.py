@@ -17,5 +17,6 @@ parser.add_argument(
 
 FLAGS = parser.parse_args()
 gdown.download_folder(
-    url=FLAGS.dir_url, output=cnvrg_workdir + "/output/", quiet=True, use_cookies=False
+    url=FLAGS.dir_url, output="output/", quiet=True, use_cookies=False
 )
+raise ValueError("to kick off debug mode")
