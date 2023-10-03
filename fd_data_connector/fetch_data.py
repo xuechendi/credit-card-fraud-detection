@@ -21,4 +21,4 @@ gdown.download_folder(
     url=FLAGS.dir_url, output="output/", quiet=True, use_cookies=False
 )
 ls_dir = os.listdir("output/")
-print("download completed, file has been saved to {ls_dir}")
+print(f"download completed, file has been saved to {ls_dir}")
