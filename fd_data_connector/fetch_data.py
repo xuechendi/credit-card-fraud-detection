@@ -16,7 +16,9 @@ parser.add_argument(
 )
 
 FLAGS = parser.parse_args()
+print("start to download file from {FLAGS.dir_url}")
 gdown.download_folder(
     url=FLAGS.dir_url, output="output/", quiet=True, use_cookies=False
 )
-raise ValueError("to kick off debug mode")
+ls_dir = os.listdir("output/")
+print("download completed, file has been saved to {ls_dir}")
